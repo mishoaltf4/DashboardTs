@@ -69,22 +69,26 @@ function LayOut() {
                 <GiCube  />
               </li>
             </Link>
-            <Link to="favorites">
-              <li >
+            <Link to="favorites" className='relative'>
+              <li className={`${currentLoc === "/favorites" ? "text-active-btn before:w-1 before:h-full before:bg-active-btn before:absolute before:-left-full before:rounded-r-full" : ""}`}>
                 <AiFillHeart  />
               </li>
             </Link>
-            <Link to="order-list">
-              <li >
+            <Link to="order-list" className='relative'>
+              <li className={`${currentLoc === "/order-list" ? "text-active-btn before:w-1 before:h-full before:bg-active-btn before:absolute before:-left-full before:rounded-r-full" : "" }`}>
                 <SiMarketo  />
               </li>
             </Link>
-            <li>
-              <AiFillFileText  />
-            </li>
-            <li>
-              <BsCalendar2CheckFill  />
-            </li>
+            <Link to="pricing" className='relative'>
+              <li className={`${currentLoc === "/pricing" ? "text-active-btn before:w-1 before:h-full before:bg-active-btn before:absolute before:-left-full before:rounded-r-full" : "" }`}>
+                <AiFillFileText  />
+              </li>
+            </Link>
+            <Link to="calendar" className='relative'>
+              <li className={`${currentLoc === "/calendar" ? "text-active-btn before:w-1 before:h-full before:bg-active-btn before:absolute before:-left-full before:rounded-r-full" : "" }`}>
+                <BsCalendar2CheckFill  />
+              </li>
+            </Link>
             <li>
               <SiTodoist  />
             </li>
